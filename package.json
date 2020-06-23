@@ -1,0 +1,19 @@
+{
+  "name": "money-formating",
+  "description": "Convert and formatte money value (string, non-formatted, number).",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "https://github.com/rodgeraraujo/money-formating.git",
+  "author": "Rogério Araújo <rogerio.araujo@mail.com>",
+  "bugs": {
+    "url": "https://github.com/rodgeraraujo/money-formating/issues"
+  },
+  "homepage": "https://github.com/rodgeraraujo/money-formating#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
