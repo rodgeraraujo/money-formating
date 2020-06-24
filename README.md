@@ -1,4 +1,4 @@
-# HtmlScripting
+# MoneyFormating
 
 [![npm version](https://badge.fury.io/js/money-formating.svg)](https://badge.fury.io/js/money-formating) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

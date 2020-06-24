@@ -1,7 +1,7 @@
 {
   "name": "money-formating",
-  "description": "Convert and formatte money value (string, non-formatted, number).",
-  "version": "0.1.0",
+  "description": "Convert and format money value (string, non-formatted, number).",
+  "version": "0.1.1",
   "main": "index.js",
   "scripts": {
     "test": "jest"
