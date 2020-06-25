@@ -5,7 +5,9 @@ function MoneyFormating(currency) {
 /**
  * Convert money value into Money cents value.
  *
+ * @since 0.1.0
  * @param  {String|Number} amount Money value
+ * @returns {Number} Returns the cents (Numerical) value.
  * @public
  */
 MoneyFormating.prototype.moneyToCents = function moneyToCents(amount) {
@@ -22,7 +24,9 @@ MoneyFormating.prototype.moneyToCents = function moneyToCents(amount) {
 /**
  * Convert cents value into money value.
  *
+ * @since 0.1.0
  * @param  {String|Number} amount Cents value
+ * @returns {Number} Returns the money value.
  * @public
  */
 MoneyFormating.prototype.centsToMoney = function centsToMoney(cents) {
