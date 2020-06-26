@@ -31,3 +31,27 @@ test('should formating cents (String) values in money value', () => {
 test('should formating cents (Number) values in money value', () => {
   expect(formating.centsToMoney('34562301')).toBe(345623.01);
 });
+
+test('should throw Error on invalid or without values', () => {
+  expect(() => {
+    formating.moneyToCurrency(342);
+  }).toThrow('Cents must be a value of type String.');
+});
+
+test('should formating cents (String) into a formatted value (without currency) ', () => {
+  expect(formating.moneyToCurrency('300')).toBe('3,00');
+});
+
+test('should formating cents (String) into a formatted brazilian real currency', () => {
+  expect(formating.moneyToCurrency('395600', 'BRL')).toBe('R$ 3.956,00');
+});
+
+test('should formating cents (String) into a formatted brazilian dollar currency', () => {
+  expect(formating.moneyToCurrency('34234349292', 'usd')).toBe(
+    'US$ 342.343.492,92'
+  );
+});
+
+test('should formating cents (String) into a formatted value if the currency is invalid or not passed', () => {
+  expect(formating.moneyToCurrency('999 999 999', 'abc')).toBe('9.999.999,99');
+});
